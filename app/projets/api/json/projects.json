@@ -1,0 +1,33 @@
+{"projects" : {
+    "0" : {
+            "name":"PinkyBall",
+            "description":"Pinkyball est un jeux-vidéo crée en 2021. Ce projet à démarré sur Godot 3 mais il à été redéveloppé sur Godot 4. Ce jeux-vidéo peut-être catégorisé dans catégories suivantes : Rétro Platformer Casse-Brique Action Experimental PinkyBall est développé en GDScript (langage propre à Godot Engine). Selon Itch.io, pour déployer un projet utilisable sur le service en ligne. Il faut que ce dernier soit en HTML5. C’est pour cela que j’ai exporté la démo de PiknkyBall en HTML5 (HTML/CSS et JavaScript) afin que nous; Utilisateurs et utilisatrices de Itch.io puissions exécuter le projet sur Itch.io. Le projet supporte une exécution sous mobile et ordinateur. Ce que le projet m’a apporté l’occasion d’être autonome et de travailler en  équipe lorsqu’une aide était nécessaire pour résoudre un problème dont un recul été. [savoirs-être] plus [compétences]",
+            "date" : {
+                "from":"2021",
+                "until":"maintenant"
+            },
+            "link" : {
+                "github" : "https://github.com/KevinCastel/PinkyBall-html",
+                "project" : "https://invitation.itch.io/pinkyball"
+            },
+            "sub-type" : [
+                "rétro",
+                "platrformer",
+                "casse-brique",
+                "action",
+                "experimental"
+            ],
+            "stacks" : ["GDScript"],
+            "type":"Jeux-Vidéo"
+        },
+    "1" : {
+        "name":"Jean-Dominique"
+    },
+    "2": {
+        "name":"Duminombre"
+    },
+    "3": {
+        "name":"Learning Deutsch Again"
+    }
+    }
+}
