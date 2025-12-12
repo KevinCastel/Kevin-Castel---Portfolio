@@ -19,8 +19,59 @@
   }
 }
 
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+@theme {
+  --color-dark-blue: rgb(0 45 86);
+  --color-cyan : rgb(178,209,226);
+  --color-purple : rgb(44,0,74);
+  --color-dark-pink : rgb(74,0,35);
+  --color-light-gray : rgb(212,212,212);
+  --color-medium-gray : rgb(180,180,180);
+  --color-pinkyball-pink : rgb(216, 36, 124);
+  --color-pinkyball-pink-hover : rgb(117, 20, 68);
+  --color-green-center-exp : rgb(107 179 35);
+  --color-yellow-left-exp : rgb(213 198 32);
+  --color-orange-right-exp : rgb(214 111 0);
+  --color-blue-hyperlink-h : rgb(116 216 223);
+  --color-blue-hyperlink-focus : rgb(0 4 233);
+  --color-blue-gray-hyperlink-normal : rgb(178 209 226);
+  --color-blue-filters : rgb(53 96 135);
+  --color-dark-gray : rgb(72 72 72);
+  --color-blue-gray :rgb(111 130 140);
+  --color-medium-blue : rgb(0 85 162);
+  --color-blue-blackened : rgb(0 23 44);
 }
+
+body {
+  /* background: var(--background); */
+  color: var(--background);
+  font-family: Arial, Helvetica, sans-serif;
+  height: 100vh;
+  width: 100vw;
+  background-color: var(--color-cyan);
+  /* display: flex;
+  flex-direction: column; */
+  /* overflow: hidden; */
+}
+
+main{
+  /* width: 100%; */
+  display: flex;
+  align-items: center;
+}
+
+button:hover{
+  cursor: grab;
+}
+
+input{
+  outline: 0;
+}
+
+/* .icon-gd{
+  fill: aqua;
+}
+
+.icon{
+  fill: hsl(300, 69%, 71%)
+  currentColor:red;
+} */

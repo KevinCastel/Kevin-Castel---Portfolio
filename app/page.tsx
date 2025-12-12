@@ -1,65 +1,65 @@
 import Image from "next/image";
 
+import GodotEngine from '@/public/godot-engine-svgrepo.svg'
+
+
 export default function Home() {
-  return (
-    <div className="flex min-h-screen items-center justify-center bg-zinc-50 font-sans dark:bg-black">
-      <main className="flex min-h-screen w-full max-w-3xl flex-col items-center justify-between py-32 px-16 bg-white dark:bg-black sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={100}
-          height={20}
-          priority
-        />
-        <div className="flex flex-col items-center gap-6 text-center sm:items-start sm:text-left">
-          <h1 className="max-w-xs text-3xl font-semibold leading-10 tracking-tight text-black dark:text-zinc-50">
-            To get started, edit the page.tsx file.
-          </h1>
-          <p className="max-w-md text-lg leading-8 text-zinc-600 dark:text-zinc-400">
-            Looking for a starting point or more instructions? Head over to{" "}
-            <a
-              href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Templates
-            </a>{" "}
-            or the{" "}
-            <a
-              href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Learning
-            </a>{" "}
-            center.
-          </p>
-        </div>
-        <div className="flex flex-col gap-4 text-base font-medium sm:flex-row">
-          <a
-            className="flex h-12 w-full items-center justify-center gap-2 rounded-full bg-foreground px-5 text-background transition-colors hover:bg-[#383838] dark:hover:bg-[#ccc] md:w-[158px]"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={16}
-              height={16}
-            />
-            Deploy Now
-          </a>
-          <a
-            className="flex h-12 w-full items-center justify-center rounded-full border border-solid border-black/[.08] px-5 transition-colors hover:border-transparent hover:bg-black/[.04] dark:border-white/[.145] dark:hover:bg-[#1a1a1a] md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Documentation
-          </a>
-        </div>
-      </main>
+  return ( <main className="w-full h-auto flex flex-col pt-22 relative">
+    <div className="w-full min-h-30 max-h-50 h-40 flex justify-center items-center relative">
+      <h1 className="h-auto w-auto text-6xl text-dark-blue">Kevin Castel</h1>
     </div>
-  );
+    <AboutMe/>
+    <AboutMyLastProject/>
+  </main>);
+}
+
+function AboutMe(){
+  return (<section className="w-full h-auto text-light-gray bg-purple rounded-t-lg relative">
+    <div className="w-full h-full p-4">
+      <h2 className="text-center text-2xl"> À propos de moi ?</h2>
+      <p className="w-full h-auto p-4 text-center">Mon exploration et ma passion pour la programmation à débuté il y a 7ans.
+        En effet, c’est durant mon Bac Pro Système Numérique OPTION Réseau que j’ai découvert la programmation. Par la suite, cela m’a mené à créer des projets personnel gravitationnants à des projets professionnel.</p>
+    </div>
+    <div className="w-full h-10 bg-dark-pink rounded-t-lg"/>
+  </section>);
+}
+
+function AboutMyLastProject(){
+  return (<section className="w-full h-auto p-4 pt-0 text-light-gray bg-dark-pink">
+      <h2 className=" text-center text-2xl">Mon projet le plus conséquent ?</h2>
+      <p className="w-full h-30 p-4 text-center">PinkyBall est un projet catégorisé jeux-vidéo puisque produit avec Godot Engine 3 et 4. Ce projet evolue
+                                                continuellement en fonction de ce que je souhaite développé comme un outils ou bien une fonctionnalité 
+                                                tels-que l’implémentation du réseau</p>
+      <h3 className="w-full h-auto text-center text-cyan">Capture d'écran durant diffèrentes parties de Pinkyball</h3>
+      <ScreenshotsPinkyBall/>
+      <ToolsPinkyball/>
+    </section>);
+}
+
+
+function ScreenshotsPinkyBall(){
+  const pictureSize = 200;
+  return (<div className="w-full h-auto flex flex-row justify-evenly relative p-4">
+        <Image width={pictureSize} height={pictureSize} src={"https://img.itch.zone/aW1hZ2UvMTQ1MDUwMC84NjMwMjExLnBuZw==/original/onle4Q.png"} alt="Capture d'écran du jeu Pinkyball mode platforme"/>
+        <Image width={pictureSize} height={pictureSize} src={"https://img.itch.zone/aW1hZ2UvMTQ1MDUwMC8xMTE4MDcxNy5wbmc=/original/sRsqCo.png"} alt="Capture d'écran du jeu Pinkyball mode personnage"/>
+        <Image width={pictureSize} height={pictureSize} src={"https://img.itch.zone/aW1hZ2UvMTQ1MDUwMC84NjMwMjEzLnBuZw==/original/uNu%2BI%2B.png"} alt={"Seconde capture d'écran du jeu Pinkyball mode platforme"}/>
+      </div>)
+}
+
+function ToolsPinkyball(){
+  const sizeSVG = 40;
+  const toolsContainerClassname = "h-full w-auto flex flex-col items-center";
+  return (<div className="w-full h-auto flex flex-row justify-evenly items-center relative p-4">
+        <div className={toolsContainerClassname}>
+          <div className="h-auto w-auto max-h-11">
+            {/* FIXME Problème de couleur sur ce SVG */}
+            <Image className="" width={sizeSVG} height={sizeSVG} src={"godotengine-svgrepo-com.svg"} alt="Logo Godot Engine"/>
+          </div>
+          <a href="https://godotengine.org/">Accéder à Godot Engine</a>
+        </div>
+        <div className={toolsContainerClassname}>
+          <Image  width={sizeSVG} height={sizeSVG} src={"/pinkyball.png"} alt="Logo PinkyBall" />
+          <a href="https://invitations.itch.io/pinkyball">Accéder à PinkyBall</a>
+        </div>
+      </div>)
 }
