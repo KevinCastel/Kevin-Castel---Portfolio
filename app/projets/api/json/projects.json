@@ -1,14 +1,17 @@
 {"projects" : {
     "0" : {
             "name":"PinkyBall",
-            "description":"Pinkyball est un jeux-vidéo crée en 2021. Ce projet à démarré sur Godot 3 mais il à été redéveloppé sur Godot 4. Ce jeux-vidéo peut-être catégorisé dans catégories suivantes : Rétro Platformer Casse-Brique Action Experimental PinkyBall est développé en GDScript (langage propre à Godot Engine). Selon Itch.io, pour déployer un projet utilisable sur le service en ligne. Il faut que ce dernier soit en HTML5. C’est pour cela que j’ai exporté la démo de PiknkyBall en HTML5 (HTML/CSS et JavaScript) afin que nous; Utilisateurs et utilisatrices de Itch.io puissions exécuter le projet sur Itch.io. Le projet supporte une exécution sous mobile et ordinateur. Ce que le projet m’a apporté l’occasion d’être autonome et de travailler en  équipe lorsqu’une aide était nécessaire pour résoudre un problème dont un recul été. [savoirs-être] plus [compétences]",
+            "description":["Pinkyball est un jeux-vidéo crée en 2021. Ce projet à démarré sur Godot 3 mais il à été redéveloppé sur Godot 4. Ce jeux-vidéo peut-être catégorisé dans les suivantes :<enum-sub-type>",
+                            "PinkyBall est développé en <stacks> (langage propre à Godot Engine). Selon Itch.io, pour déployer un projet utilisable sur le service en ligne. Il faut que ce dernier soit en HTML5.",
+                            "C’est pour cela que j’ai exporté la démo de PiknkyBall en HTML5 (HTML/CSS et JavaScript) afin que nous; Utilisateurs et utilisatrices de Itch.io puissions exécuter le projet sur Itch.io.",
+                            "Le projet supporte une exécution sous mobile et ordinateur. Ce que le projet m’a apporté est de mettre au profit mon autonomie et de travailler en  équipe lorsqu’une aide était nécessaire pour résoudre un problème dans le code"],
             "date" : {
                 "from":"2021",
                 "until":"maintenant"
             },
             "link" : {
-                "github" : "https://github.com/KevinCastel/PinkyBall-html",
-                "project" : "https://invitation.itch.io/pinkyball"
+                "Dépôt Git de la démo" : "https://github.com/KevinCastel/PinkyBall-html",
+                "PinkyBall Itch.io" : "https://invitation.itch.io/pinkyball"
             },
             "sub-type" : [
                 "rétro",
@@ -18,13 +21,29 @@
                 "experimental"
             ],
             "stacks" : ["GDScript"],
-            "type":"Jeux-Vidéo"
+            "type":"Jeux-Vidéo",
+            "image":[
+                {"Gameplay Pinkyball":"https://img.itch.zone/aW1hZ2UvMTQ1MDUwMC84NjMwMjExLnBuZw==/original/onle4Q.png"},
+                {"Gameplay Coffee Falling":"https://img.itch.zone/aW1hZ2UvMTQ1MDUwMC84NjMwMjE0LnBuZw==/original/Wl5cjo.png"}]
         },
     "1" : {
-        "name":"Jean-Dominique"
+        "name":"Jean-Dominique",
+        "description":["Jean-Dominique est une <type> de sous types :<sub-type>",
+                        "Ce projet à été réalisé <stacks> depuis la bibliothèque discord.py.",
+                        "<enum-test>"],
+        "stacks" : ["Python"],
+        "type" : "Bot/App Discord",
+        "sub-type" : ["mini jeu","jeu du pendu"],
+        "test" : ["bonjour","aurevoir"],
+        "date" : {
+            "from":"",
+            "until":""
+        }
     },
     "2": {
-        "name":"Duminombre"
+        "name":"Duminombre",
+        "stacks":["JavaScript"],
+        "type":["Mini-Jeux"]
     },
     "3": {
         "name":"Learning Deutsch Again"

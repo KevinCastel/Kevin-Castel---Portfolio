@@ -11,6 +11,9 @@ export default function Page(){
     useEffect(()=>{
         setProjects(getProjects());
     },[setProjects, projects]);
+    
+    // TODO Récupère les filtres depuis des states
+
     return (<main className="w-full h-auto flex flex-col pt-22 pb-11 relative">
         <SearchBar/>
         <SearchFilter/>
@@ -19,6 +22,7 @@ export default function Page(){
         </div>
         <div className="grid grid-cols-4 gap-4 p-2">
             {Object.entries(projects).map((project:Object)=>{
+                // TODO Applique les filtres si trouver
                 if (Object.keys(project).length <= 1) {
                     return null;
                 }
@@ -62,7 +66,7 @@ function ProjectCard({index, propsProject}:ProjectCardInterface){
             setDefaultDate(date);
         };
         if (propsProject.hasOwnProperty("type")){
-            setDefaultProjectType("Type: "+propsProject.type);
+            setDefaultProjectType("Type: "+propsProject["type"]);
         }
         if (propsProject.hasOwnProperty("stacks")){
             let stacks = "";
@@ -75,11 +79,6 @@ function ProjectCard({index, propsProject}:ProjectCardInterface){
         setDefaultProjectType,
         setDefaultProjectLanguage
     ]);
-
-    /* TODO Utilisation d'un id pour charger un projet 
-        Le projet à l'id sera chargé
-    */
-
 
     return (<div className="h-auto w-auto min-w-30 bg-blue-filters rounded-lg border-1 bordre-dark-blue p-3 flex flex-col justify-center items-center">
             <h2 className="h-auto w-auto min-w-30 text-[90%] text-white mb-2">{defaultName}</h2>

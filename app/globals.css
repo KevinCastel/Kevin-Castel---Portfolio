@@ -67,6 +67,10 @@ input{
   outline: 0;
 }
 
+.test {
+  color: rgb(178,209,226);
+}
+
 /* .icon-gd{
   fill: aqua;
 }
